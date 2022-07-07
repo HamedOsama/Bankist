@@ -896,3 +896,9 @@ h4 {
     padding: 1rem 0.3rem;
   }
 }
+
+@media (min-width: 25px) {
+  button {
+    color: black;
+  }
+}

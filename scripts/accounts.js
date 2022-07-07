@@ -212,7 +212,8 @@ const displayInterest = function (account) {
 const login = () => {
   const user = (currentUser = accounts.find(
     acc =>
-      acc.username == inputLoginUsername.value && acc.pin == inputLoginPin.value
+      acc.username == inputLoginUsername.value.toLowerCase() &&
+      acc.pin == inputLoginPin.value
   ));
   if (user) {
     getCurrentTime();
